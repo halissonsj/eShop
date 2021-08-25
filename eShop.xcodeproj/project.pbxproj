@@ -13,6 +13,8 @@
 		EEACFF3026D5AA56001456D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEACFF2F26D5AA56001456D6 /* Preview Assets.xcassets */; };
 		EEACFF3B26D5AA56001456D6 /* eShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEACFF3A26D5AA56001456D6 /* eShopTests.swift */; };
 		EEACFF4626D5AA56001456D6 /* eShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEACFF4526D5AA56001456D6 /* eShopUITests.swift */; };
+		EEACFF5726D5AAC9001456D6 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEACFF5626D5AAC9001456D6 /* TabView.swift */; };
+		EEACFF5F26D5ABA7001456D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEACFF5E26D5ABA7001456D6 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		EEACFF4126D5AA56001456D6 /* eShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEACFF4526D5AA56001456D6 /* eShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eShopUITests.swift; sourceTree = "<group>"; };
 		EEACFF4726D5AA56001456D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEACFF5626D5AAC9001456D6 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		EEACFF5E26D5ABA7001456D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +99,11 @@
 		EEACFF2726D5AA48001456D6 /* eShop */ = {
 			isa = PBXGroup;
 			children = (
+				EEACFF6326D5DDC7001456D6 /* Common */,
 				EEACFF2826D5AA48001456D6 /* eShopApp.swift */,
 				EEACFF2A26D5AA48001456D6 /* ContentView.swift */,
+				EEACFF5626D5AAC9001456D6 /* TabView.swift */,
+				EEACFF5E26D5ABA7001456D6 /* HomeView.swift */,
 				EEACFF2C26D5AA56001456D6 /* Assets.xcassets */,
 				EEACFF3126D5AA56001456D6 /* Info.plist */,
 				EEACFF2E26D5AA56001456D6 /* Preview Content */,
@@ -128,6 +135,13 @@
 				EEACFF4726D5AA56001456D6 /* Info.plist */,
 			);
 			path = eShopUITests;
+			sourceTree = "<group>";
+		};
+		EEACFF6326D5DDC7001456D6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEACFF5726D5AAC9001456D6 /* TabView.swift in Sources */,
+				EEACFF5F26D5ABA7001456D6 /* HomeView.swift in Sources */,
 				EEACFF2B26D5AA48001456D6 /* ContentView.swift in Sources */,
 				EEACFF2926D5AA48001456D6 /* eShopApp.swift in Sources */,
 			);
