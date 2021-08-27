@@ -17,6 +17,8 @@
 		EEACFF4626D5AA56001456D6 /* eShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEACFF4526D5AA56001456D6 /* eShopUITests.swift */; };
 		EEACFF5726D5AAC9001456D6 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEACFF5626D5AAC9001456D6 /* TabBarView.swift */; };
 		EEACFF5F26D5ABA7001456D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEACFF5E26D5ABA7001456D6 /* HomeView.swift */; };
+		EEFD446C26D89287001BAF64 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFD446B26D89287001BAF64 /* LoginView.swift */; };
+		EEFD447726D897E5001BAF64 /* AuthTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFD447626D897E5001BAF64 /* AuthTextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		EEACFF4726D5AA56001456D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEACFF5626D5AAC9001456D6 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		EEACFF5E26D5ABA7001456D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EEFD446B26D89287001BAF64 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EEFD447626D897E5001BAF64 /* AuthTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +120,9 @@
 				EEACFF2A26D5AA48001456D6 /* ContentView.swift */,
 				EEACFF5626D5AAC9001456D6 /* TabBarView.swift */,
 				EEACFF5E26D5ABA7001456D6 /* HomeView.swift */,
+				EEFD446B26D89287001BAF64 /* LoginView.swift */,
 				EE539ACF26D7250600C08A06 /* ProductView.swift */,
+				EEFD447626D897E5001BAF64 /* AuthTextFieldView.swift */,
 				EEACFF2C26D5AA56001456D6 /* Assets.xcassets */,
 				EEACFF3126D5AA56001456D6 /* Info.plist */,
 				EEACFF2E26D5AA56001456D6 /* Preview Content */,
@@ -279,7 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEFD447726D897E5001BAF64 /* AuthTextFieldView.swift in Sources */,
 				EEACFF5726D5AAC9001456D6 /* TabBarView.swift in Sources */,
+				EEFD446C26D89287001BAF64 /* LoginView.swift in Sources */,
 				EEACFF5F26D5ABA7001456D6 /* HomeView.swift in Sources */,
 				EEACFF2B26D5AA48001456D6 /* ContentView.swift in Sources */,
 				EEACFF2926D5AA48001456D6 /* eShopApp.swift in Sources */,
