@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		EE539AC526D6FD4600C08A06 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE539AC426D6FD4600C08A06 /* ProductModel.swift */; };
 		EE539AD026D7250600C08A06 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE539ACF26D7250600C08A06 /* ProductView.swift */; };
+		EE97F31226DA01EA00523AB2 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE97F31126DA01EA00523AB2 /* PrimaryButton.swift */; };
 		EEACFF2926D5AA48001456D6 /* eShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEACFF2826D5AA48001456D6 /* eShopApp.swift */; };
-		EEACFF2B26D5AA48001456D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEACFF2A26D5AA48001456D6 /* ContentView.swift */; };
 		EEACFF2D26D5AA56001456D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEACFF2C26D5AA56001456D6 /* Assets.xcassets */; };
 		EEACFF3026D5AA56001456D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEACFF2F26D5AA56001456D6 /* Preview Assets.xcassets */; };
 		EEACFF3B26D5AA56001456D6 /* eShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEACFF3A26D5AA56001456D6 /* eShopTests.swift */; };
@@ -41,9 +41,9 @@
 /* Begin PBXFileReference section */
 		EE539AC426D6FD4600C08A06 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		EE539ACF26D7250600C08A06 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		EE97F31126DA01EA00523AB2 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		EEACFF2526D5AA48001456D6 /* eShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEACFF2826D5AA48001456D6 /* eShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eShopApp.swift; sourceTree = "<group>"; };
-		EEACFF2A26D5AA48001456D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EEACFF2C26D5AA56001456D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEACFF2F26D5AA56001456D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EEACFF3126D5AA56001456D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +92,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		EE94524326DA0093004D78E6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EEFD446B26D89287001BAF64 /* LoginView.swift */,
+				EEFD447626D897E5001BAF64 /* AuthTextFieldView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EE94524426DA00B1004D78E6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EEACFF5E26D5ABA7001456D6 /* HomeView.swift */,
+				EE539ACF26D7250600C08A06 /* ProductView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		EEACFF1C26D5AA48001456D6 = {
 			isa = PBXGroup;
 			children = (
@@ -115,17 +133,15 @@
 		EEACFF2726D5AA48001456D6 /* eShop */ = {
 			isa = PBXGroup;
 			children = (
+				EE94524426DA00B1004D78E6 /* Home */,
+				EE94524326DA0093004D78E6 /* Login */,
 				EE539AC326D6FD3700C08A06 /* Model */,
 				EEACFF2826D5AA48001456D6 /* eShopApp.swift */,
-				EEACFF2A26D5AA48001456D6 /* ContentView.swift */,
 				EEACFF5626D5AAC9001456D6 /* TabBarView.swift */,
-				EEACFF5E26D5ABA7001456D6 /* HomeView.swift */,
-				EEFD446B26D89287001BAF64 /* LoginView.swift */,
-				EE539ACF26D7250600C08A06 /* ProductView.swift */,
-				EEFD447626D897E5001BAF64 /* AuthTextFieldView.swift */,
 				EEACFF2C26D5AA56001456D6 /* Assets.xcassets */,
 				EEACFF3126D5AA56001456D6 /* Info.plist */,
 				EEACFF2E26D5AA56001456D6 /* Preview Content */,
+				EE97F31126DA01EA00523AB2 /* PrimaryButton.swift */,
 			);
 			path = eShop;
 			sourceTree = "<group>";
@@ -289,9 +305,9 @@
 				EEACFF5726D5AAC9001456D6 /* TabBarView.swift in Sources */,
 				EEFD446C26D89287001BAF64 /* LoginView.swift in Sources */,
 				EEACFF5F26D5ABA7001456D6 /* HomeView.swift in Sources */,
-				EEACFF2B26D5AA48001456D6 /* ContentView.swift in Sources */,
 				EEACFF2926D5AA48001456D6 /* eShopApp.swift in Sources */,
 				EE539AD026D7250600C08A06 /* ProductView.swift in Sources */,
+				EE97F31226DA01EA00523AB2 /* PrimaryButton.swift in Sources */,
 				EE539AC526D6FD4600C08A06 /* ProductModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
