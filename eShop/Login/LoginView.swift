@@ -13,18 +13,23 @@ struct LoginView: View {
     @State private var state: AuthTextFieldStates = .idle
     @State private var password = ""
     
+    init() {
+        UINavigationBar.appearance().backgroundColor = UIColor(Color("background"))
+    }
+    
     var body: some View {
         
         NavigationView {
             ZStack {
+                
                 Color("background")
                     .ignoresSafeArea()
                 
-                VStack {
-                    AuthTextFieldView(field: $login, state: $state, textName: "Email")
+                VStack(spacing: 15) {
+                    AuthTextFieldView(field: $login, state: $state, title: "Email")
                         .navigationTitle("Login")
                     
-                    AuthTextFieldView(field: $password, state: $state, textName: "Senha")
+                    AuthTextFieldView(field: $password, state: $state, title: "Senha")
                     
                     SecondaryButton(text: "Esqueceu sua senha?", action: {
                         //route
@@ -33,7 +38,19 @@ struct LoginView: View {
                     PrimaryButton(text: "LOGIN", action: {
                         //route
                     })
+                    
+                    Spacer()
+                    
+                    Text("Ou logue com sua conta")
+                    
+                    HStack(spacing: 16) {
+                        AuthBottomButton(imageName: "google_icon", action: {})
+                        
+                        AuthBottomButton(imageName: "fb_icon", action: {})
+                    }
+                    .padding(.bottom, 40)
                 }
+                .padding(.top, 70)
             }
             
         }
@@ -67,5 +84,23 @@ struct SecondaryButton: View {
             }
         })
         .padding(.trailing, 16)
+    }
+}
+
+struct AuthBottomButton: View {
+    
+    var imageName: String
+    var action: () -> Void
+    
+    var body: some View {
+        Button(action: {}, label: {
+            Image(imageName)
+                .resizable()
+                .frame(width: 25, height: 25)
+                .padding(.vertical, 20)
+                .padding(.horizontal, 30)
+                .background(Color.white)
+                .cornerRadius(15)
+        })
     }
 }

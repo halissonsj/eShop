@@ -17,14 +17,17 @@ struct AuthTextFieldView: View {
     
     @Binding var field: String
     @Binding var state: AuthTextFieldStates
-    var textName: String
+    var title: String
     
     var body: some View {
         HStack(spacing: 5) {
-            TextField(textName, text: $field)
+            TextField(title, text: $field)
+                .textFieldStyle(AuthTextFieldStyle())
                 .font(.system(size: 22))
                 .background(Color.white)
-                .frame(width: 343, height: 64)
+                .cornerRadius(5)
+                .padding(.horizontal, 16)
+                .shadow(color: .gray, radius: 1, x: 0.25, y: 0.25)
             
             if state == .success {
                 Image("icon_check")
@@ -35,7 +38,13 @@ struct AuthTextFieldView: View {
                     .resizable()
                     .frame(width: 35, height: 35)
             }
-            
         }
+    }
+}
+
+private struct AuthTextFieldStyle: TextFieldStyle {
+    func _body(configuration: TextField<Self._Label>) -> some View {
+        configuration
+            .padding(25)
     }
 }
