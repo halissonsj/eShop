@@ -20,10 +20,10 @@ struct TabBarView: View {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
-            HomeView()
+            CategoriesView()
                 .tabItem {
                     Image(systemName: "cart.fill")
-                    Text("Shop")
+                    Text("Categories")
                 }
         }
         .accentColor(Color(red: 0.859, green: 0.188, blue: 0.133))

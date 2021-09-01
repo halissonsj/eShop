@@ -17,6 +17,6 @@ struct ProductModel: Identifiable {
 }
 
 struct ProductModelFactory {
-    static var productList = [ProductModel(name: "Evening Dress", author: "Dorothy Perkins", imageName: "pinkDress1", ratingImageName: "fiveStars", price: "12,00"),
-                              ProductModel(name: "Evening Dress", author: "Dorothy Perkins", imageName: "pinkDress1", ratingImageName: "fiveStars", price: "12,00")]
+    static var productList = [ProductModel(name: "Evening Dress1", author: "Dorothy Perkins", imageName: "pinkDress1", ratingImageName: "fiveStars", price: "12,00"),
+                              ProductModel(name: "Evening Dress2", author: "Dorothy Perkins", imageName: "pinkDress1", ratingImageName: "fiveStars", price: "12,00")]
 }

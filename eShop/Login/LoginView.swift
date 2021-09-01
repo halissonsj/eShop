@@ -35,9 +35,12 @@ struct LoginView: View {
                         //route
                     })
                     
-                    PrimaryButton(text: "LOGIN", action: {
-                        //route
-                    })
+                    NavigationLink(
+                        destination: TabBarView(),
+                        label: {
+                            Text("LOGIN")
+                        })
+                        .buttonStyle(PrimaryButtonStyle())
                     
                     Spacer()
                     

@@ -28,12 +28,16 @@ struct HomeView: View {
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
-                            ForEach(products, id: \.id) { product in
-                                ProductView(name: product.name,
-                                            author: product.author,
-                                            imageName: product.imageName,
-                                            ratingImageName: product.ratingImageName,
-                                            price: product.price)
+                            ForEach(products) { product in
+                                NavigationLink(
+                                    destination: Text("detail of \(product.name)"),
+                                    label: {
+                                        ProductView(name: product.name,
+                                                    author: product.author,
+                                                    imageName: product.imageName,
+                                                    ratingImageName: product.ratingImageName,
+                                                    price: product.price)
+                                    })
                             }
                         }
                     }
@@ -54,6 +58,7 @@ struct HomeView: View {
                 }
             }
         }
+        .navigationBarHidden(true)
     }
 }
 
