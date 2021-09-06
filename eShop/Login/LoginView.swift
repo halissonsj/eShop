@@ -39,6 +39,7 @@ struct LoginView: View {
                         destination: TabBarView(),
                         label: {
                             Text("LOGIN")
+                                .frame(width: 343, height: 48)
                         })
                         .buttonStyle(PrimaryButtonStyle())
                     

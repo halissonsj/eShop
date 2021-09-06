@@ -13,16 +13,29 @@ struct HomeView: View {
         let products: [ProductModel] = ProductModelFactory.productList
         
         ZStack {
+            
+            Color("background")
+                .ignoresSafeArea()
+            
             ScrollView {
                 VStack(alignment: .leading, spacing: 10) {
-                    Image("BannerHome")
+                    Image("bannerHome2")
                         .resizable()
-                        .frame(height: 196)
-                        .overlay(Text("Street clothes")
-                                    .font(.system(size: 34, weight: .bold, design: .default))
+                        .frame(height: 536)
+                        .overlay(
+                            VStack(alignment: .leading) {
+                                Text("Fashion\n Sale")
                                     .foregroundColor(.white)
-                                    .padding()
-                                 , alignment: .bottomLeading)
+                                    .font(.system(size: 48, weight: .bold))
+                                NavigationLink(
+                                    destination: Text("Check Sale"),
+                                    label: {
+                                        Text("Check")
+                                            .frame(width: 160, height: 36)
+                                    })
+                                    .buttonStyle(PrimaryButtonStyle())
+                            }
+                            .padding(), alignment: .bottomLeading)
                     
                     HomeTitleView(title: "Sales", subTitle: "Super Summer Sale")
                     
@@ -58,6 +71,7 @@ struct HomeView: View {
                 }
             }
         }
+        .edgesIgnoringSafeArea(.all)
         .navigationBarHidden(true)
     }
 }

@@ -28,7 +28,6 @@ struct PrimaryButtonStyle: ButtonStyle {
         configuration
             .label
             .font(.system(size: 17, weight: .semibold))
-            .frame(width: 343, height: 48)
             .background(Color(red: 0.859, green: 0.188, blue: 0.133))
             .foregroundColor(.white)
             .cornerRadius(24)
